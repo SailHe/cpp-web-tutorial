@@ -6,7 +6,9 @@ It's designed to outline a few ways to take legacy C++ (or new C++) and integrat
 # Build instructions
 First... get the code:
 ```
-> git clone https://github.com/freezer333/cppwebify-tutorial.git
+> git clone https://github.com/SailHe/cpp-web-tutorial.git
+> 或者 git clone git@github.com:SailHe/cpp-web-tutorial.git
+> @see https://nodeaddons.com/building-an-asynchronous-c-addon-for-node-js-using-nan/
 ```
 
 ## Step 1:  Install node-gyp
@@ -19,6 +21,11 @@ This is required for building all the C++ example projects, including the addons
 ## Step 2:  Install grunt CLI (optional)
 You can build all the projects from the CLI if you use grunt.  If you don't want to install grunt, you can build all the projects individually (see step 3) instead.
 
+安装Win构建工具; PS: Windows 10上PowerShell需以Admin身份运行 才能成功执行此语句
+```
+> npm install --global --production windows-build-tools
+```
+安装grunt;
 ```
 > npm install -g grunt-cli
 ```
@@ -61,5 +68,5 @@ To run the web app, go to `/web` and type `npm install` as well.
 The web app has links to invoke all the C++ examples.  Just go to `/web` and type:
 
 ```
-> node index
+> node index  或 node ./
 ```
