@@ -1,0 +1,17 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "node debug 启动程序",
+            // "program": "${workspaceFolder}/web/index.js" 
+            // @see https://code.visualstudio.com/docs/nodejs/nodejs-tutorial
+            // web前面的'/' 和 '\\'交替使用 可以正常调试 -- 原因未知
+            "program": "${workspaceFolder}/web\\index.js"
+        }
+    ]
+}
